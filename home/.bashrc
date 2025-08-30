@@ -1,18 +1,9 @@
 source $HOME/.common_shell
 
-# useful fror checking for nix or other
 if [ -f /etc/NIXOS ]; then
-    # We're on NixOS
     eval "$(starship init bash)"
 else
-	#Default prompt
-	if [ -f "$HOME/programs_local/starship" ]; then
-		export STARSHIP_CONFIG=~/configuration/other/starship.toml
-
-		eval "$(starship init bash)"
-	else
-		PS1='\u@\h:\w\$ '
-	fi
+	PS1='\u@\h:\w\$ '
 fi
 
 export EDITOR="nvim"

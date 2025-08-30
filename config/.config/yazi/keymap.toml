@@ -1,5 +1,4 @@
 [mgr]
-
 # Custom mappings
 prepend_keymap = [
 	#{ on = "<C-a>", run = "echo 'one'", desc = "Single command with `Ctrl + a`" },

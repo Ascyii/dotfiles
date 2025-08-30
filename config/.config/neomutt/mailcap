@@ -1,5 +1,0 @@
-text/html; firefox %s
-text/plain; nvim %s
-application/pdf; zathura --fork %s
-image/png; feh %s
-image/jpeg; feh %s
