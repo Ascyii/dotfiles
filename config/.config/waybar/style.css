@@ -1,0 +1,155 @@
+* {
+	font-family: 'NotoFont';
+	font-size: 12px;
+	font-weight: bold;
+}
+
+window#waybar {
+	/* transparent background for the main bar */
+	background-color: rgba(0, 0, 0, 0);
+	color: #fbf1c7;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+button:hover {
+	background: inherit;
+	background-color: inherit;
+	box-shadow: inherit;
+	color: inherit;
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+#workspaces {
+	padding: 1px 5px;
+	border-radius: 5px;
+	margin: 2px 5px;
+}
+
+#workspaces button {
+	padding: 0 5px;
+	background-color: #3e4243;
+	color: #ed817d;
+	margin: 1px 3px;
+}
+
+#workspaces button.active {
+	background-color: #9a5263;
+	color: #ebdbb2;
+	box-shadow: inset 0 -3px #ebdbb2;
+}
+
+#workspaces button.urgent {
+	background-color: #d395a7;
+	color: #282828;
+	box-shadow: inset 0 -3px #ebdbb2;
+}
+
+#window {
+	color: #ca9d1f;
+	padding: 0 8px;
+	background-color: rgba(100, 50, 50, 0.75);
+	margin: 2px 0;
+	border-radius: 5px;
+	box-shadow: inset 0 -3px #ca9d1f;
+}
+
+
+#backlight {
+	background-color: #282828;
+	color: #ebdbb2;
+	margin: 2px 3px;
+	padding: 0 7px;
+	border-radius: 5px;
+	box-shadow: inset 0 -3px #ebdbb2;
+}
+
+#battery {
+	background-color: #282828;
+	color: #b8bb26;
+	padding: 0 7px;
+	border-radius: 5px;
+	margin: 2px 3px;
+	box-shadow: inset 0 -3px #b8bb26;
+}
+
+#battery.charging {
+	background-color: #282828;
+	color: #b8bb26;
+}
+
+#battery.good:not(.charging) {
+	background-color: #282828;
+	color: #b8bb26;
+}
+
+#battery.warning:not(.charging) {
+	background-color: #a76911;
+	color: #ebdbb2;
+}
+
+#battery.critical:not(.charging) {
+	background-color: #cc241d;
+	color: #ffffff;
+}
+
+#pulseaudio {
+	background-color: #282828;
+	color: #fabd2f;
+	padding: 0 7px;
+	border-radius: 5px;
+	margin: 2px 3px;
+	box-shadow: inset 0 -3px #fabd2f;
+}
+
+#pulseaudio.muted {
+	background-color: #282828;
+	color: #a89984;
+	box-shadow: inset 0 -3px #a89984;
+}
+
+#tray {
+	background-color: #282828;
+	padding: 0 7px;
+	border-radius: 5px;
+	margin: 2px 3px;
+}
+
+#custom-status,
+#custom-webdav {
+	background-color: #3e3e3e;  /* Slightly lighter dark gray */
+	font-size: 12px;        /* Smaller text */
+	border-radius: 4px;         /* Rounded corners */
+	padding: 4px 10px;          /* Padding inside the box */
+	margin-left: 10px;          /* Move it away from center modules */
+	margin: 5px 5px;
+	color: #ffffff;             /* Optional: make sure text is visible */
+}
+
+
+#clock {
+	background-color: #282828;
+	color: #d3869b;
+	padding: 0 7px;
+	border-radius: 5px;
+	margin: 2px 13;
+	box-shadow: inset 0 -3px #d3869b;
+}
+
+#memory {
+	background-color: #282828;
+	color: #a39bcb;
+	padding: 0 7px;
+	border-radius: 5px;
+	margin: 2px 3px;
+	box-shadow: inset 0 -3px #a39bcb;
+}
+
+#cpu {
+	background-color: #282828;
+	color: #ee9c70;
+	padding: 0 7px;
+	border-radius: 5px;
+	margin: 2px 3px;
+	box-shadow: inset 0 -3px #ee9c70;
+}

@@ -1,0 +1,42 @@
+# Implement more commands to be more productive
+customCommands:
+  - key: 'U'
+    context: 'status'
+    # WARNING: this only works when the remote is a ssh remote
+    # TODO: Implement a script that can figure out if it ssh or http and act accordingly
+    command: "xdg-open https://$(git remote get-url origin | tr @ '\n' | grep : | tr : / | rev | cut -c5- | rev)"
+    description: 'open the remote url in smime'
+
+notARepository: 'skip'
+
+# Dont prompt here
+promptToReturnFromSubprocess: false
+
+# Setting the theme to cattpuccin
+gui:
+  skipDiscardChangeWarning: true
+  theme:
+    activeBorderColor:
+      - '#eba0ac'
+      - bold
+    inactiveBorderColor:
+      - '#a6adc8'
+    optionsTextColor:
+      - '#89b4fa'
+    selectedLineBgColor:
+      - '#313244'
+    cherryPickedCommitBgColor:
+      - '#45475a'
+    cherryPickedCommitFgColor:
+      - '#eba0ac'
+    unstagedChangesColor:
+      - '#f38ba8'
+    defaultFgColor:
+      - '#cdd6f4'
+    searchingActiveBorderColor:
+      - '#f9e2af'
+
+  authorColors:
+    '*': '#b4befe'
+  showFileTree: false
+

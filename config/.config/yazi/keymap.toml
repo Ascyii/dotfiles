@@ -1,0 +1,52 @@
+[mgr]
+
+# Custom mappings
+prepend_keymap = [
+	#{ on = "<C-a>", run = "echo 'one'", desc = "Single command with `Ctrl + a`" },
+	# This is for drag and drop support of terminal filemanger (works also with signal and other applications)
+	{ on = [ "<C-n>" ], run = '''shell 'xdragon -x -T "$1"' --confirm''' },
+
+	# Lazygit in yazi
+	{on   = [ "g", "i" ],run  = "plugin lazygit",desc = "run lazygit"},
+
+	# Chmod in yazi
+	{on   = [ "c", "m" ],run  = "plugin chmod",desc = "Chmod on selected files"},
+
+	# Recover the last delted file
+	{ on = ["u"], run = "plugin restore", desc = "Restore last deleted files/folders" },
+
+	# Get the size of the cwd
+	{ on   = [ "\\", "s" ], run  = "plugin what-size", desc = "Calc size of selection or cwd" },
+
+	# Bookmark support
+	{on = [ "m" ],run = "plugin bookmarks save",desc = "Save current position as a bookmark"},
+	{on = [ "'" ],run = "plugin bookmarks jump",desc = "Jump to a bookmark"},
+	{on = [ "b", "d" ],run = "plugin bookmarks delete",desc = "Delete a bookmark"},
+	{on = [ "b", "D" ],run = "plugin bookmarks delete_all",desc = "Delete all bookmarks"},
+
+	# new linemodes
+	{on = [ "\\", "n", "m" ],run = "linemode mtime",desc = "Modified time"},
+	{on = [ "\\", "n", "n" ],run = "linemode none",desc = "no time"},
+	{on = [ "\\", "n", "b" ],run = "linemode btime",desc = "Birth time"},
+]
+
+# More mappings
+append_keymap = [
+	# Default jumping to stuff
+	{ on = [ "g", "s" ], run = "cd ~/synced", desc = "Go to Synced folder" },
+	{ on = [ "g", "u" ], run = "cd ~/projects/university", desc = "Go to University folder" },
+	{ on = [ "g", "n" ], run = "cd ~/configuration", desc = "Go to config folder" },
+	{ on = [ "g", "p" ], run = "cd ~/projects", desc = "Go to projects folder" },
+	{ on = [ "g", "w" ], run = "cd ~/workspace_local", desc = "Go to workspace" },
+	{ on = [ "g", "e" ], run = "cd ~/configuration/dotfiles", desc = "Go to dotfilEs" },
+	{ on = [ "g", "r" ], run = "cd /", desc = "Go to root" },
+	{ on = [ "g", "b" ], run = "cd ~/synced/docs/books", desc = "Go to books" },
+	{ on = [ "g", "l" ], run = "cd ~/.local", desc = "Go to Local" },
+	{ on = [ "g", "v" ], run = "cd ~/synced/webdav_folder", desc = "Go to Webdav" },
+	{ on = [ "g", "o" ], run = "cd ~/Documents", desc = "Go to Docs" },
+	{ on = [ "g", "a" ], run = "cd ~/.cache", desc = "Go to Cache" },
+	{ on = [ "g", "t" ], run = "cd ~/.local/share/Trash", desc = "Go to Trash" },
+
+	{ on = [ "g", "U" ], run = "cd ~/projects/university/pdfs", desc = "Go to Uni PDF" },
+]
+

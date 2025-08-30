@@ -1,0 +1,48 @@
+[alias]
+	br = "branch"
+	cm = "commit -a -m 'auto commit'"
+	lg = "log --oneline --graph --decorate"
+	st = "status"
+	up = "!f() { git add .; git commit -a -m 'auto commit'; git fetch -a && git pull && git push; }; f"
+
+[branch]
+	autoSetupMerge = true
+[init]
+	defaultBranch = "main"
+
+[pull]
+	rebase = true
+[push]
+	autoSetupRemote = true
+	default = "current"
+
+[user]
+	email = "jonashahn1@gmx.net"
+	name = "Jonas Hahn"
+
+[diff]
+	tool = nvimdiff
+[difftool "nvimdiff"]
+	#cmd = nvim -d \"$LOCAL\" \"$REMOTE\"
+	cmd = ~/projects/scripts/diffv_wrap.sh \"$LOCAL\" \"$REMOTE\"
+    trustExitCode = true
+
+[merge]
+	tool = nvimdiff
+[mergetool "nvimdiff"]
+	#cmd = nvim -d \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+	# just pass all that is available to the script
+	cmd = ~/projects/scripts/diffv_wrap.sh \"$LOCAL\" \"$REMOTE\" \"$MERGED\" \"$BASE\" 
+
+    trustExitCode = true
+[mergetool]
+	prompt = false
+
+[core]
+	autocrlf = input
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

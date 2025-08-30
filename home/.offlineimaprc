@@ -1,0 +1,15 @@
+[general]
+accounts = Test
+
+[Account Test]
+localrepository = Local
+remoterepository = Remote
+
+[Repository Local]
+type = Maildir
+localfolders = ~/files_local/storedmail/
+
+[Repository Remote]
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+type = IMAP
+remotehost = email.gwdg.de

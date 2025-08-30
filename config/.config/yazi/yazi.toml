@@ -1,0 +1,33 @@
+[mgr]
+sort_by = "extension"
+show_hidden = true
+
+[opener]
+imagefeh = [
+	{ run = 'gtk4-launch fehcustom.desktop "$@"', orphan = true, for = "unix" },
+]
+play = [
+	{ run = 'mpv "$@"', orphan = true, for = "unix" },
+]
+edit = [
+	{ run = '$EDITOR "$@"', block = true, for = "unix" },
+]
+open = [
+	{ run = 'xdg-open "$@"', desc = "Open" },
+]
+
+[open]
+prepend_rules = [
+	{ mime = "application/pdf", use = "open" },
+	{ mime = "application/json", use = "edit" },
+	{ name = "*.html", use = [ "open" ] },
+]
+rules = [
+	{ mime = "image/*", use = "imagefeh" },
+	{ mime = "text/*", use = "edit" },
+	{ mime = "video/*", use = "play" },
+]
+append_rules = [
+	{ name = "*", use = ["edit", "open", "play"]}
+]
+

@@ -1,0 +1,107 @@
+#############################
+# common conf across shells #
+#############################
+
+# Setting some aliases
+alias on="nvim ~/projects/planner/quick.md"
+alias ns="nix-shell -p "
+alias um="umount /mnt/webdav"
+alias mm="systemctl start mnt-webdav.mount"
+alias wi="wiki-tui"
+alias a="alpine"
+alias ff="~/projects/scripts/hyprfix.sh" # Fix the touchpad not working on the laptop with a simple script
+alias sp="spotify_player"
+alias ne="newsboat"
+alias po="castero"
+alias h="zsh"
+alias tw="torify w3m duckduckgo.com"
+
+alias rmbak="mkdir -p ~/.local/share/Trash/files && find . -name '.bak.*' -exec mv '{}' ~/.local/share/Trash/files \;"
+alias f="~/projects/scripts/search.sh"
+
+alias studup="~/projects/scripts/update_stud.sh"
+
+alias ssd="s && shd"
+alias lg="lazygit"
+alias m="make"
+alias mn="make nix"
+alias syn="~/projects/scripts/run_unison.sh"
+alias s="~/projects/scripts/run_unison.sh"
+#alias synu="unison MainAll_CIP"
+alias rmt="rm /tmp/all_git_projects"
+alias fu="chch && fla && shd"
+alias fla="sudo nixos-rebuild switch --flake '/home/jonas/configuration/#'"
+alias flr="NIX_SSHOPTS='-o RequestTTY=force'; nixos-rebuild --use-remote-sudo --target-host root@hahn1.one --build-host root@hahn1.one switch --flake ~/configuration#stranox"
+alias tt="~/projects/scripts/find_gits.sh"
+alias dotu="bash ~/configuration/install_dots.sh"
+alias tkkk="tmux kill-server"
+
+alias feh="feh -d"
+alias os="cd /nix/store && yazi"
+
+# command to rest to the current dir of the tmux session (as in the session name)
+# replace a leading _ in the session name with a .
+# This breaks the shell if no tmux session is there
+# alias rr="\cd ~$(tmux display-message -p '#S' | sed 's/^_/\./')"
+
+# ripgrep all
+alias rga="rg --hidden --no-ignore"
+# light ripgrep
+# Does not work as excpected
+#alias rgl='rg --files --hidden --glob "!**/.git/*" --glob "!**/.cache/*" --glob "!**/.local/*" --glob "!**/bigfiles/*" --glob "!**/*.{jpg,png,gif,mp4,mkv,tar,zip,iso}"'
+# ripgrep preview
+# TODO: make find dotfiles
+alias g='nvim -c "lua require(\"telescope.builtin\").live_grep()"'
+alias n="nvim"
+alias nr='nvim -c "lua require(\"telescope.builtin\").oldfiles()"'
+alias nn='nvim -c "lua require(\"helpers.functions\") find_eff()"'
+alias k='nvim -c "lua require(\"config.keymaps\") open_cal()"'
+alias rt='rm /tmp/all_git_projects'
+alias nt='nvim -c ":e ~/management/brainstore/todos/todo.txt"'
+
+alias ta="todo.sh add"
+alias t="todo.sh"
+alias tl="todo.sh list"
+alias td="todo.sh do"
+
+alias de="sudo loadkeys de"
+alias us="sudo loadkeys us"
+alias b="btop"
+alias c="cat"
+alias chch="~/projects/scripts/check_git.sh"
+alias fa="fastfetch"
+alias gui="Hyprland && clear"
+alias ls='ls --color=auto'
+# This updates the tofi database
+alias tofiu='rm ~/.cache/tofi-drun'
+
+alias ll='exa -la '
+#alias shd="~/projects/scripts/run_unison.sh && pkill -u $(whoami)"
+# TODO: implement a way to always sync on startup and shutdown
+alias shd="shutdown now"
+alias ttt='timer -f 10m'
+alias zshconfig="mate ~/.zshrc"
+alias giter="git add . && git commit -a -m 'auto commit' && git push"
+alias grep='grep --color=always'
+
+# Office stuff
+alias oiiiii="bash ~/management/office/sync.sh in"
+alias ou="bash ~/management/office/sync.sh out"
+
+alias aiiiii="bash ~/projects/scripts/sync_all.sh in"
+alias au="bash ~/projects/scripts/sync_all.sh out"
+
+###########################################################################
+
+# Exports #
+export EDITOR='nvim'
+export HTTP_HOME="duckduckgo.com"
+export RANGER_LOAD_DEFAULT_RC=false
+export PATH=$HOME/programs_local/:$HOME/.cargo/bin:~/projects/scripts:$HOME/.local/bin:/usr/local/bin:$PATH
+export MANPAGER="nvim +Man!"
+
+export PATH=$HOME/go/bin:$PATH
+
+# Used by some scripts as shortcuts
+export loc="$HOME/files_local/"
+

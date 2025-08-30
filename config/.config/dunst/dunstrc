@@ -1,0 +1,41 @@
+# Main dunst configuration
+
+[global]
+    monitor = 0
+    follow = none
+    origin = top-right
+    offset = 5 x 15
+
+    # for example dunstify -h int:value:12
+    progress_bar = true
+    progress_bar_height = 14
+    progress_bar_frame_width = 0
+    progress_bar_min_width = 100
+    progress_bar_max_width = 300
+    progress_bar_corner_radius = 5
+	progress_bar_corners = bottom-left, top-right
+
+    frame_width = 1
+    background = "#222222"
+    foreground = "#ffffff"
+	frame_color = "#5e5086"
+
+    font = Fira Mono 12
+
+    gap_size = 6
+    padding = 10
+    horizontal_padding = 8
+    alignment = left
+    vertical_alignment = center
+
+
+    ignore_newline = no
+    stack_duplicates = true
+    hide_duplicate_count = false
+    show_indicators = no
+    notification_limit = 10
+    indicate_hidden = yes
+
+    corner_radius = 5
+    corners = bottom, top-left
+
