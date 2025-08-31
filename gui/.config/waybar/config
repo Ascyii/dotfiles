@@ -1,46 +1,47 @@
 {
 	"position": "top",
-		"modules-left": ["hyprland/workspaces", "hyprland/window"],
-		"modules-center": ["custom/webdav","clock",  "custom/status"],
-		"modules-right": ["tray", "pulseaudio", "backlight", "cpu", "memory", "battery"],
-		"clock": {
-			"format": "{:%H:%M}",
-			"format-alt": "{:%d.%m.%Y}",
-			"tooltip": false,
+	"height": 0,
+	"modules-left": ["hyprland/workspaces", "hyprland/window"],
+	"modules-center": ["custom/webdav","clock",  "custom/status"],
+	"modules-right": ["tray", "pulseaudio", "backlight", "cpu", "memory", "battery"],
+	"clock": {
+		"format": "{:%H:%M}",
+		"format-alt": "{:%d.%m.%Y}",
+		"tooltip": false,
+	},
+	"memory": {
+		"interval": 10,
+		"format": "⛃ {}%"
+	},
+	"cpu": {
+		"interval": 7,
+		"format": "🧠 {usage:2}%"
+	},
+	"backlight": {
+		"format": "🌥️ {percent}% ",
+		"tooltip": false,
+	},
+	"hyprland/window": {
+		"format": "👉 {}",
+		"separate-outputs": true,
+	},
+	"pulseaudio": {
+		"format": "🔉 {volume}%",
+		"on-click": "pavucontrol",
+		"tooltip": false,
+	},
+	"battery": {
+		"interval": 30,
+		"states": {
+			"good": 90,
+			"warning": 30,
+			"critical": 20
 		},
-		"memory": {
-			"interval": 10,
-			"format": "⛃ {}%"
-		},
-		"cpu": {
-			"interval": 7,
-			"format": "🧠 {usage:2}%"
-		},
-		"backlight": {
-			"format": "🌥️ {percent}% ",
-			"tooltip": false,
-		},
-		"hyprland/window": {
-			"format": "👉 {}",
-			"separate-outputs": true,
-		},
-		"pulseaudio": {
-			"format": "🔉 {volume}%",
-			"on-click": "pavucontrol",
-			"tooltip": false,
-		},
-		"battery": {
-			"interval": 30,
-			"states": {
-				"good": 90,
-				"warning": 30,
-				"critical": 20
-			},
-			"format": "🔋 {capacity}% ",
-			"format-charging": "⚡ {capacity}%",
-		},
-		"tray": {
-			"icon-size": 21,
-			"spacing": 5
-		},
+		"format": "🔋 {capacity}% ",
+		"format-charging": "⚡ {capacity}%",
+	},
+	"tray": {
+		"icon-size": 21,
+		"spacing": 5
+	},
 }
