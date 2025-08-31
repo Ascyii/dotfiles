@@ -1,0 +1,41 @@
+[window]
+opacity = 0.8
+
+[font]
+normal = { family = "monospace", style = "Medium" }
+
+[colors.primary]
+foreground = "#f7f6ec"
+background = "#1c1c1c"
+
+[colors.cursor]
+text = "#1d1d1d"
+cursor = "#eccf4f"
+
+[colors.selection]
+text = "#f7f6ec"
+background = "#385776"
+
+[colors.normal]
+black   = "#343835"
+red     = "#ce3e60"
+green   = "#7bb75b"
+yellow  = "#e8b32a"
+blue    = "#4c99d3"
+magenta = "#a57fc4"
+cyan    = "#389aac"
+white   = "#f9faf6"
+
+[colors.bright]
+black   = "#585a58"
+red     = "#d18ea6"
+green   = "#767e2b"
+yellow  = "#77592e"
+blue    = "#337879"
+magenta = "#7f5190"
+cyan    = "#76bbca"
+white   = "#b1b5ae"
+
+[window.padding]
+x = 1
+y = 1

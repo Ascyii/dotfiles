@@ -1,6 +1,6 @@
 [mgr]
 sort_by = "extension"
-show_hidden = true
+show_hidden = false
 
 [opener]
 imagefeh = [
@@ -30,4 +30,3 @@ rules = [
 append_rules = [
 	{ name = "*", use = ["edit", "open", "play"]}
 ]
-
