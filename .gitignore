@@ -1,0 +1,3 @@
+# Ignore the yazi packages and only store the commit in the dotfiles
+/cli/dot-config/yazi/flavors
+/cli/dot-config/yazi/plugins

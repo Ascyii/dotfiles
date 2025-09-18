@@ -34,7 +34,7 @@ append_keymap = [
 	# Default jumping to stuff
 	{ on = [ "g", "s" ], run = "cd ~/synced", desc = "Go to Synced folder" },
 	{ on = [ "g", "u" ], run = "cd ~/projects/university", desc = "Go to University folder" },
-	{ on = [ "g", "n" ], run = "cd ~/configuration", desc = "Go to config folder" },
+	{ on = [ "g", "n" ], run = "cd ~/nixos", desc = "Go to nixos folder" },
 	{ on = [ "g", "p" ], run = "cd ~/projects", desc = "Go to projects folder" },
 	{ on = [ "g", "w" ], run = "cd ~/workspace_local", desc = "Go to workspace" },
 	{ on = [ "g", "e" ], run = "cd ~/configuration/dotfiles", desc = "Go to dotfilEs" },

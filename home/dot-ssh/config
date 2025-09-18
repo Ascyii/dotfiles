@@ -11,6 +11,7 @@ Host gitlab.gwdg.de
 Host strato
 	HostName hahn1.one
 	User root
+	IdentityFile ~/.ssh/id_strato
 
 Host bitzz
 	HostName bitzz.de

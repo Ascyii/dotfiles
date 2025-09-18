@@ -1,0 +1,29 @@
+[[plugin.deps]]
+use = "Lil-Dank/lazygit"
+rev = "8f37dc5"
+hash = "ee71543790f0ce3951161045a3787abd"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:chmod"
+rev = "d1c8baa"
+hash = "8ad3e90b079190b4905f24a44f4ca06b"
+
+[[plugin.deps]]
+use = "boydaihungst/restore"
+rev = "dc40509"
+hash = "e7e377f9b1bbaca4a2e5d9ec9709ac4d"
+
+[[plugin.deps]]
+use = "pirafrank/what-size"
+rev = "d896656"
+hash = "62251f94eb67648d42cdfcfb8be0fad2"
+
+[[plugin.deps]]
+use = "dedukun/bookmarks"
+rev = "9ef1254"
+hash = "92fbb5483657fa7976cdf4e0104e18e0"
+
+[[flavor.deps]]
+use = "dangooddd/kanagawa"
+rev = "a0b1d9d"
+hash = "abfb0b2371259b2c8adfc7b617c3d7e5"
