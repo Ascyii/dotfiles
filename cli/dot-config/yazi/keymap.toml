@@ -32,20 +32,18 @@ prepend_keymap = [
 # More mappings
 append_keymap = [
 	# Default jumping to stuff
-	{ on = [ "g", "s" ], run = "cd ~/synced", desc = "Go to Synced folder" },
-	{ on = [ "g", "u" ], run = "cd ~/projects/university", desc = "Go to University folder" },
+	{ on = [ "g", "s" ], run = "cd /webdav", desc = "Go to webdav folder" },
+	{ on = [ "g", "u" ], run = "cd ~/projects/university", desc = "Go to university folder" },
 	{ on = [ "g", "n" ], run = "cd ~/nixos", desc = "Go to nixos folder" },
 	{ on = [ "g", "p" ], run = "cd ~/projects", desc = "Go to projects folder" },
 	{ on = [ "g", "w" ], run = "cd ~/workspace_local", desc = "Go to workspace" },
-	{ on = [ "g", "e" ], run = "cd ~/configuration/dotfiles", desc = "Go to dotfilEs" },
+	{ on = [ "g", "e" ], run = "cd ~/dotfiles", desc = "Go to dotfiles" },
 	{ on = [ "g", "r" ], run = "cd /", desc = "Go to root" },
-	{ on = [ "g", "b" ], run = "cd ~/synced/docs/books", desc = "Go to books" },
+	{ on = [ "g", "b" ], run = "cd /webdav/docs/books", desc = "Go to books" },
 	{ on = [ "g", "l" ], run = "cd ~/.local", desc = "Go to Local" },
-	{ on = [ "g", "v" ], run = "cd ~/synced/webdav_folder", desc = "Go to Webdav" },
 	{ on = [ "g", "o" ], run = "cd ~/Documents", desc = "Go to Docs" },
 	{ on = [ "g", "a" ], run = "cd ~/.cache", desc = "Go to Cache" },
 	{ on = [ "g", "t" ], run = "cd ~/.local/share/Trash", desc = "Go to Trash" },
-
 	{ on = [ "g", "U" ], run = "cd ~/projects/university/pdfs", desc = "Go to Uni PDF" },
 ]
 

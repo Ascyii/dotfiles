@@ -9,6 +9,7 @@ export PATH=$HOME/programs_local/:$HOME/.cargo/bin:~/projects/scripts:$HOME/.loc
 export MANPAGER="nvim +Man!"
 export GOPATH=$HOME/.go
 export PATH=$HOME/.go/bin:$PATH
+export ANDROID_HOME=/home/jonas/Android
 
 alias on="nvim ~/projects/planner/quick.md"
 alias ns="nix-shell -p "
