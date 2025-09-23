@@ -6,7 +6,7 @@ Host github.com
 Host gitlab.gwdg.de
 	HostName gitlab.gwdg.de
 	User git
-	IdentityFile ~/.ssh/id_gitlab_gwdg
+	IdentityFile ~/.ssh/id_university
 
 Host strato
 	HostName hahn1.one
@@ -20,6 +20,7 @@ Host bitzz
 Host physik
 	HostName login.physik.uni-goettingen.de
 	User j.hahn02
+	IdentityFile ~/.ssh/id_university
 
 Host informatik
 	HostName shell.informatik.uni-goettingen.de

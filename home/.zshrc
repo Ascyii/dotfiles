@@ -1,7 +1,5 @@
-# Main zsh configuration
-
-# Common modules
 source $HOME/.common_shell
+
 bindkey '^R' history-incremental-search-backward
 bindkey -v
 
@@ -12,24 +10,16 @@ function rgnvim() {
     | awk -F: '{print $1, $2}' \
     | xargs -r sh -c 'nvim +"$1" "$0"'
 }
-
-# Functions
 function battery_status() {
-    # Get the percentage of both batteries using acpi and extract the percentage values
-	#
     perc1=$(acpi | grep -i 'Battery 0' | sed 's/^[^,]*, //' | awk '{print $1}' | tr -d '%,')
     perc2=$(acpi | grep -i 'Battery 1' | sed 's/^[^,]*, //' | awk '{print $1}' | tr -d '%,')
 	echo -e "$(((perc1 + perc2) / 2))"
 }
 function time_status_custom() {
-	# Get the current local time without seconds
 	time=$(timedatectl | grep Local | awk '{print $5}' | awk -F: '{print $1 ":" $2 }')
 	echo -e "$time"
 }
-
 function up() {
-	# TODO: implement this function do autodetect what unison script to run
-	# Depending on the home user
 	user=$(pwd)
 	echo $user
 }
@@ -59,8 +49,6 @@ function r() {
   rm -f -- "$tmp"
 }
 
-
-# Update the terminal colors
 if [ "$TERM" = "linux" ]; then
     echo -en "\e]P0000000" #black
     echo -en "\e]P8393939" #darkgrey
@@ -81,24 +69,6 @@ if [ "$TERM" = "linux" ]; then
     clear #for background artifacting
 fi
 
-# useful fror checking for nix or other
 if [ -f "/etc/NIXOS" ]; then
-	# nachbesserungen
-	alias cd="z"
-	alias ls="eza"
-	alias cat="bat"
-	alias ls='exa'
-	export TERM='kitty'
-    # We're on NixOS
     eval "$(starship init zsh)"
-else
-    # Custom manual prompt
-	alias z="cd"
-	#Default prompt
-	if [ -f "$HOME/programs_local/starship" ]; then
-		export STARSHIP_CONFIG=~/configuration/other/starship.toml
-		eval "$(starship init zsh)"
-	else
-		PS1="%n@%m %1~$ "
-	fi
 fi
