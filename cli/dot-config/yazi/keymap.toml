@@ -39,7 +39,7 @@ append_keymap = [
 	{ on = [ "g", "w" ], run = "cd ~/workspace_local", desc = "Go to workspace" },
 	{ on = [ "g", "e" ], run = "cd ~/dotfiles", desc = "Go to dotfiles" },
 	{ on = [ "g", "r" ], run = "cd /", desc = "Go to root" },
-	{ on = [ "g", "b" ], run = "cd /webdav/docs/books", desc = "Go to books" },
+	{ on = [ "g", "b" ], run = "cd /shared", desc = "Go to hdd" },
 	{ on = [ "g", "l" ], run = "cd ~/.local", desc = "Go to Local" },
 	{ on = [ "g", "o" ], run = "cd ~/Documents", desc = "Go to Docs" },
 	{ on = [ "g", "a" ], run = "cd ~/.cache", desc = "Go to Cache" },

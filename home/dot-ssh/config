@@ -3,6 +3,12 @@ Host github.com
 	User git
 	IdentityFile ~/.ssh/id_github
 
+Host amazon
+	Hostname 3.74.164.123
+	User ec2-user
+	IdentityFile ~/.ssh/id_amazon
+
+
 Host gitlab.gwdg.de
 	HostName gitlab.gwdg.de
 	User git
