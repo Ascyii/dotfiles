@@ -31,3 +31,11 @@ Host physik
 Host informatik
 	HostName shell.informatik.uni-goettingen.de
 	User j.hahn02
+
+Host pvemsi
+	HostName pvemsi
+	User root
+
+Host dock
+	HostName dockerman
+	User admin

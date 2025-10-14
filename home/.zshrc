@@ -1,5 +1,7 @@
 source $HOME/.common_shell
 
+export TERM="alacritty"
+
 bindkey '^R' history-incremental-search-backward
 bindkey -v
 

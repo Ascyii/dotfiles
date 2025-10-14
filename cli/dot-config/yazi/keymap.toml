@@ -32,7 +32,7 @@ prepend_keymap = [
 # More mappings
 append_keymap = [
 	# Default jumping to stuff
-	{ on = [ "g", "s" ], run = "cd /webdav", desc = "Go to webdav folder" },
+	{ on = [ "g", "s" ], run = "cd ~/webdav", desc = "Go to webdav folder" },
 	{ on = [ "g", "u" ], run = "cd ~/projects/university", desc = "Go to university folder" },
 	{ on = [ "g", "n" ], run = "cd ~/nixos", desc = "Go to nixos folder" },
 	{ on = [ "g", "p" ], run = "cd ~/projects", desc = "Go to projects folder" },
@@ -41,6 +41,7 @@ append_keymap = [
 	{ on = [ "g", "r" ], run = "cd /", desc = "Go to root" },
 	{ on = [ "g", "b" ], run = "cd /shared", desc = "Go to hdd" },
 	{ on = [ "g", "l" ], run = "cd ~/.local", desc = "Go to Local" },
+	{ on = [ "g", "b" ], run = "cd ~/webdav/notes", desc = "Go to notes" },
 	{ on = [ "g", "o" ], run = "cd ~/Documents", desc = "Go to Docs" },
 	{ on = [ "g", "a" ], run = "cd ~/.cache", desc = "Go to Cache" },
 	{ on = [ "g", "t" ], run = "cd ~/.local/share/Trash", desc = "Go to Trash" },

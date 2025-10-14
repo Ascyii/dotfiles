@@ -5,3 +5,7 @@ When there are conflicts the resolve script can be used with care. It can be use
 When `stow` is run with the dotfiles flag then the prefix is parsed and replaced. Be careful that there still exist dotfiles in this repo.
 
 Be sure to only use the `stow.sh` wrapper scripts as this sets some defaults.
+
+## Additional
+
+Setup `rlone` host `Strato` for the automatic webdav mounting to work.
