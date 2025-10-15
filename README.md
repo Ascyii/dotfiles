@@ -8,4 +8,4 @@ Be sure to only use the `stow.sh` wrapper scripts as this sets some defaults.
 
 ## Additional
 
-Setup `rlone` host `Strato` for the automatic webdav mounting to work.
+Setup `rlone` host `Strato` for the automatic webdav mounting to work. This is automatically done when using hyprland.

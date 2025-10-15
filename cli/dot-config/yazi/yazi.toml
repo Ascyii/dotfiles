@@ -1,11 +1,12 @@
 [mgr]
-sort_by = "extension"
+sort_by = "mtime"
+linemode = "line_info"
+sort_reverse = true
+sort_dir_first = true
 show_hidden = false
+mouse_events = []
 
 [opener]
-imagefeh = [
-	{ run = 'gtk4-launch fehcustom.desktop "$@"', orphan = true, for = "unix" },
-]
 play = [
 	{ run = 'mpv "$@"', orphan = true, for = "unix" },
 ]
@@ -23,7 +24,7 @@ prepend_rules = [
 	{ name = "*.html", use = [ "open" ] },
 ]
 rules = [
-	{ mime = "image/*", use = "imagefeh" },
+	{ mime = "image/*", use = "open" },
 	{ mime = "text/*", use = "edit" },
 	{ mime = "video/*", use = "play" },
 ]
