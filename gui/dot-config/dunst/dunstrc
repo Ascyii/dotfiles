@@ -1,7 +1,7 @@
 # Main dunst configuration
 
 [global]
-    monitor = 0
+    monitor = 2 # For the multi monitor setup
     follow = none
     origin = top-right
     offset = 5 x 15
@@ -28,7 +28,6 @@
     alignment = left
     vertical_alignment = center
 
-
     ignore_newline = no
     stack_duplicates = true
     hide_duplicate_count = false
@@ -38,4 +37,3 @@
 
     corner_radius = 5
     corners = bottom, top-left
-
