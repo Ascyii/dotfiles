@@ -1,6 +1,6 @@
 [{
 	"position": "top",
-	"output": "HDMI-A-1",
+	"output": ["HDMI-A-1", "eDP-1"],
 	"modules-left": ["hyprland/workspaces", "hyprland/window"],
 	"modules-center": ["custom/webdav","clock",  "custom/status"],
 	"modules-right": ["tray", "pulseaudio", "backlight", "cpu", "memory", "battery"],
