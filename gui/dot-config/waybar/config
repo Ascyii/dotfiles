@@ -1,6 +1,6 @@
-{
-	"height": 0,
+[{
 	"position": "top",
+	"output": "HDMI-A-1",
 	"modules-left": ["hyprland/workspaces", "hyprland/window"],
 	"modules-center": ["custom/webdav","clock",  "custom/status"],
 	"modules-right": ["tray", "pulseaudio", "backlight", "cpu", "memory", "battery"],
@@ -44,4 +44,14 @@
 		"icon-size": 21,
 		"spacing": 5
 	},
-}
+}, {
+	"width": 0,
+	"position": "right",
+	"output": "HDMI-A-2",
+    "modules-left": [ "hyprland/workspaces"],
+}, {
+	"width": 0,
+	"position": "left",
+	"output": "DP-1",
+    "modules-left": [ "hyprland/workspaces"],
+}]

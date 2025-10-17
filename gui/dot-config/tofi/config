@@ -2,7 +2,7 @@ font = NotoFont
 font-size = 14
 
 outline-width = 0
-border-width = 1
+border-width = 2
 padding-left = 4%
 padding-top = 2%
 
@@ -10,17 +10,16 @@ background-color = #111
 text-color = #f9fbff
 selection-color = #933
 prompt-text = "Act: "
+placeholder-text = "Now"
 
-width = 20%
-height = 40%
-anchor = bottom-right
-margin-top = 100
-margin-bottom = 100
+width = 30%
+height = 30%
+
+anchor = top
+margin-top = 250
 input-background = #1234
-margin-left = 100
-margin-right = 100
 
 hide-cursor = false
-corner-radius = 10 
+corner-radius = 7
 border-color = #F9a672
 background-color = #1B1D1Eaa
