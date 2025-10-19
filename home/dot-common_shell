@@ -15,6 +15,7 @@ export ANDROID_HOME=/home/jonas/Android
 export loc="$HOME/files_local/"
 
 alias oati="~/projects/scripts/oathi.sh"
+alias imu="immich upload -r ."
 alias chch="~/projects/scripts/check_git.sh"
 alias aut="~/projects/scripts/autostart-server.sh"
 alias tt="~/projects/scripts/find_gits.sh"
