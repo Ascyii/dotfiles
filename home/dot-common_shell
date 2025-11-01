@@ -67,6 +67,16 @@ alias ls='ls --color=auto'
 alias tofiu='rm ~/.cache/tofi-drun'
 alias ll='exa -la '
 alias shd="systemctl poweroff"
+alias nt="nvim ~/Notecloud/notes/in.txt"
+
+alias up="
+cd ~/nixos && git add . && git commit -a -m 'auto up' && git fetch && git pull
+cd ~/dotfiles && git add . && git commit -a -m 'auto up' && git fetch && git pull
+cd ~/projects/university && git add . && git commit -a -m 'auto up' && git fetch && git pull
+cd ~/projects/scripts && git add . && git commit -a -m 'auto up' && git fetch && git pull
+cd ~/.config/nvim && git add . && git commit -a -m 'auto up' && git fetch && git pull
+"
+
 alias ttt='timer -f 10m'
 alias zshconfig="mate ~/.zshrc"
 alias giter="git add . && git commit -a -m 'auto commit' && git push"
