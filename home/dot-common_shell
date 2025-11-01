@@ -81,3 +81,4 @@ alias aiiiii="bash ~/projects/scripts/sync_all.sh in"
 alias au="bash ~/projects/scripts/sync_all.sh out"
 
 alias ia="ip a"
+alias se="killall .nextcloud-wrap"
