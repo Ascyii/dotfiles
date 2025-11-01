@@ -33,5 +33,6 @@ Host informatik
 	User j.hahn02
 
 Host dock
-	HostName ascyii.de
+	HostName paper.ascyii.de
+	Port 24
 	User admin

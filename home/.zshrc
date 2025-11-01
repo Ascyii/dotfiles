@@ -74,3 +74,6 @@ fi
 if [ -f "/etc/NIXOS" ]; then
     eval "$(starship init zsh)"
 fi
+
+# opencode
+export PATH=/home/jonas/.opencode/bin:$PATH

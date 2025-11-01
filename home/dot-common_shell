@@ -17,6 +17,8 @@ export loc="$HOME/files_local/"
 alias oati="~/projects/scripts/oathi.sh"
 alias imu="immich upload -r ."
 alias chch="~/projects/scripts/check_git.sh"
+alias rp="rsync --info=progress2 -a --checksum"
+
 alias aut="~/projects/scripts/autostart-server.sh"
 alias tt="~/projects/scripts/find_gits.sh"
 alias on="nvim ~/projects/planner/quick.md"
@@ -64,7 +66,7 @@ alias gui="Hyprland && clear"
 alias ls='ls --color=auto'
 alias tofiu='rm ~/.cache/tofi-drun'
 alias ll='exa -la '
-alias shd="shutdown now"
+alias shd="systemctl poweroff"
 alias ttt='timer -f 10m'
 alias zshconfig="mate ~/.zshrc"
 alias giter="git add . && git commit -a -m 'auto commit' && git push"
