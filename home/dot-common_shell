@@ -70,11 +70,11 @@ alias shd="systemctl poweroff"
 alias nt="nvim ~/Notecloud/notes/in.txt"
 
 alias up="
-cd ~/nixos && git add . && git commit -a -m 'auto up' && git fetch && git pull
-cd ~/dotfiles && git add . && git commit -a -m 'auto up' && git fetch && git pull
-cd ~/projects/university && git add . && git commit -a -m 'auto up' && git fetch && git pull
-cd ~/projects/scripts && git add . && git commit -a -m 'auto up' && git fetch && git pull
-cd ~/.config/nvim && git add . && git commit -a -m 'auto up' && git fetch && git pull
+cd ~/nixos && git add . && git commit -a -m 'auto up' && git fetch && git pull && git push
+cd ~/dotfiles && git add . && git commit -a -m 'auto up' && git fetch && git pull && git push
+cd ~/projects/university && git add . && git commit -a -m 'auto up' && git fetch && git pull && git push
+cd ~/projects/scripts && git add . && git commit -a -m 'auto up' && git fetch && git pull && git push
+cd ~/.config/nvim && git add . && git commit -a -m 'auto up' && git fetch && git pull && git push
 "
 
 alias ttt='timer -f 10m'
