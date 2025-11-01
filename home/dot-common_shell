@@ -69,7 +69,7 @@ alias ll='exa -la '
 alias shd="systemctl poweroff"
 alias nt="nvim ~/Notecloud/notes/in.txt"
 
-alias up="~/projects/scripts/shell/up.sh"
+alias upd="~/projects/scripts/shell/up.sh"
 
 alias ttt='timer -f 10m'
 alias zshconfig="mate ~/.zshrc"
