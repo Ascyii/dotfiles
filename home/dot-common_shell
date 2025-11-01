@@ -69,7 +69,7 @@ alias ll='exa -la '
 alias shd="systemctl poweroff"
 alias nt="nvim ~/Notecloud/notes/in.txt"
 
-alias upd="~/projects/scripts/shell/up.sh"
+alias upda="~/projects/scripts/shell/up.sh"
 
 alias ttt='timer -f 10m'
 alias zshconfig="mate ~/.zshrc"
@@ -82,3 +82,9 @@ alias au="bash ~/projects/scripts/sync_all.sh out"
 
 alias ia="ip a"
 alias se="killall .nextcloud-wrap"
+alias pdf="~/projects/scripts/shell/traverse_pdf.sh"
+alias upd="~/projects/scripts/shell/traverse_pdf.sh ~/projects/university"
+alias rnt="~/projects/scripts/shell/traverse_rnote.sh ~/Nextcloud/HandNotes"
+alias typ="~/projects/scripts/shell/traverse_typst.sh ~/projects/university"
+
+alias mt="mkdir -p ~/Notecloud && rclone mount Strato: ~/Notecloud"
