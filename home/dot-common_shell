@@ -88,3 +88,4 @@ alias rnt="~/projects/scripts/shell/traverse_rnote.sh ~/Nextcloud/HandNotes"
 alias typ="~/projects/scripts/shell/traverse_typst.sh ~/projects/university"
 
 alias mt="mkdir -p ~/Notecloud && rclone mount Strato: ~/Notecloud"
+alias tp="~/projects/scripts/shell/open_sess.sh"

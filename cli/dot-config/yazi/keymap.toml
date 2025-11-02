@@ -32,7 +32,6 @@ prepend_keymap = [
 # More mappings
 append_keymap = [
 	# Default jumping to stuff
-	{ on = [ "g", "s" ], run = "cd ~/webdav", desc = "Go to webdav folder" },
 	{ on = [ "g", "u" ], run = "cd ~/projects/university", desc = "Go to university folder" },
 	{ on = [ "g", "n" ], run = "cd ~/nixos", desc = "Go to nixos folder" },
 	{ on = [ "g", "p" ], run = "cd ~/projects", desc = "Go to projects folder" },
