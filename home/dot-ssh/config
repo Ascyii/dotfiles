@@ -36,3 +36,9 @@ Host dock
 	HostName paper.ascyii.de
 	Port 24
 	User admin
+
+Host git.ascyii.de
+	HostName git.ascyii.de
+	Port 222
+	User admin
+	IdentityFile ~/.ssh/id_gitea
