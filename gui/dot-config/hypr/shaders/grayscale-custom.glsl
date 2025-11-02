@@ -14,10 +14,5 @@ void main() {
 	// https://en.wikipedia.org/wiki/Grayscale#Luma_coding_in_video_systems
 	gray = dot(pixColor.rgb, vec3(0.2627, 0.6780, 0.0593));
 
-	// Change contrast
-	float contrast = 0.95; 
-	gray = (gray - 0.5) * contrast + 0.5;
-	gray = clamp(gray, 0.0, 1.0);
-
 	fragColor = vec4(vec3(gray), pixColor.a);
 }
