@@ -5,7 +5,7 @@ hash = "ee71543790f0ce3951161045a3787abd"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "9a52857"
+rev = "8f1d971"
 hash = "8ad3e90b079190b4905f24a44f4ca06b"
 
 [[plugin.deps]]
@@ -22,6 +22,16 @@ hash = "62251f94eb67648d42cdfcfb8be0fad2"
 use = "dedukun/bookmarks"
 rev = "9ef1254"
 hash = "92fbb5483657fa7976cdf4e0104e18e0"
+
+[[plugin.deps]]
+use = "Ascyii/gpg"
+rev = "fe565fe"
+hash = "bf2fadffef4965e1824aa1a246c10a6f"
+
+[[plugin.deps]]
+use = "Rolv-Apneseth/starship"
+rev = "a63550b"
+hash = "c2021386289a0cbb3e152a052f67c177"
 
 [[flavor.deps]]
 use = "dangooddd/kanagawa"

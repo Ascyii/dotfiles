@@ -67,7 +67,7 @@ alias ls='ls --color=auto'
 alias tofiu='rm ~/.cache/tofi-drun'
 alias ll='exa -la '
 alias shd="systemctl poweroff"
-alias nt="nvim ~/Notecloud/notes/in.txt"
+alias nt="nvim ~/Nextcloud/Notes/in.txt"
 
 alias upda="~/projects/scripts/shell/up.sh"
 

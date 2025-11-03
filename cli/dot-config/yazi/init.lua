@@ -1,3 +1,10 @@
+require("starship"):setup()
+
+require("gpg"):setup {
+  default_recipient = "jonashahn1@gmx.net",
+  delete_after = true,
+}
+
 function Linemode:line_info()
 	local time = math.floor(self._file.cha.mtime or 0)
 	if time == 0 then

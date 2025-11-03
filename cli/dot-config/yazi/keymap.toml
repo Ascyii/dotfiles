@@ -11,6 +11,8 @@ prepend_keymap = [
 	# Chmod in yazi
 	{on   = [ "c", "m" ],run  = "plugin chmod",desc = "Chmod on selected files"},
 
+	{on   = [ "g", "E" ],run  = "plugin gpg",desc = "Gpg the hovered file"},
+
 	# Recover the last delted file
 	{ on = ["u"], run = "plugin restore", desc = "Restore last deleted files/folders" },
 
