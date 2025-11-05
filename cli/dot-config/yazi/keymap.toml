@@ -42,12 +42,11 @@ append_keymap = [
 	{ on = [ "g", "r" ], run = "cd /", desc = "Go to root" },
 	{ on = [ "g", "b" ], run = "cd /shared", desc = "Go to hdd" },
 	{ on = [ "g", "l" ], run = "cd ~/.local", desc = "Go to Local" },
-	{ on = [ "g", "b" ], run = "cd ~/webdav/notes", desc = "Go to notes" },
 	{ on = [ "g", "x" ], run = "cd ~/Nextcloud", desc = "Go to nextcloud" },
 	{ on = [ "g", "a" ], run = "cd ~/.cache", desc = "Go to Cache" },
 	{ on = [ "g", "T" ], run = "cd ~/.local/share/Trash", desc = "Go to trash" },
-	{ on = [ "g", "t" ], run = "cd ~/Notecloud/notes", desc = "Go to notes" },
-	{ on = [ "g", "U" ], run = "cd ~/projects/university/pdfs", desc = "Go to Uni PDF" },
+	{ on = [ "g", "t" ], run = "cd ~/Nextcloud/Notes", desc = "Go to notes" },
+	{ on = [ "g", "U" ], run = "cd ~/Nextcloud/University", desc = "Go to Uni" },
 	{ on = [ "g", "C" ], run = "cd ~/projects/university/S3", desc = "Go to current semester" },
 ]
 
