@@ -8,19 +8,19 @@ require("gpg"):setup {
 require("git"):setup()
 
 -- https://github.com/MasouShizuka/projects.yazi
---require("projects"):setup({
---    save = {
---        method = "lua",
---    },
---    last = {
---        update_after_save = true,
---        update_after_load = true,
---        load_after_start = true,
---    },
---    notify = {
---        enable = false,
---    },
---})
+require("projects"):setup({
+    save = {
+        method = "lua",
+    },
+    last = {
+        update_after_save = true,
+        update_after_load = true,
+        load_after_start = true,
+    },
+    notify = {
+        enable = false,
+    },
+})
 
 function Linemode:line_info()
     local time = math.floor(self._file.cha.mtime or 0)

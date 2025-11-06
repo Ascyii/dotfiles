@@ -20,6 +20,9 @@ open = [
 	{ run = 'xdg-open "$@"', desc = "Open" },
 ]
 
+[confirm]
+quit = false
+
 [open]
 prepend_rules = [
 	{ mime = "application/pdf", use = "open" },
