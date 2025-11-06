@@ -57,7 +57,7 @@ alias t="todo.sh"
 alias tl="todo.sh list"
 alias td="todo.sh do"
 alias de="sudo loadkeys de"
-alias us="~/projects/scripts/shell/uni_setup.sh"
+alias us="~/projects/scripts/shell/uni_setup.sh > /dev/zero 2>&1"
 alias b="btop"
 alias c="cat"
 alias chch="~/projects/scripts/check_git.sh"
@@ -89,3 +89,6 @@ alias typ="~/projects/scripts/shell/traverse_typst.sh ~/projects/university"
 
 alias mt="mkdir -p ~/Notecloud && rclone mount Strato: ~/Notecloud"
 alias tp="~/projects/scripts/shell/open_sess.sh"
+
+# From gpt
+alias nv='tmux new-session -d -s university -n uni "cd ~/projects/university && nvim -c '\''lua require(\"custom.uni\").select_course_directory()'\''" && tmux new-window -t university:2 -n typstar "cd ~/projects/typstar; exec $SHELL" && tmux select-window -t university:1 && tmux attach -t university'
