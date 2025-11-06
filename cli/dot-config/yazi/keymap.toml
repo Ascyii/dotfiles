@@ -10,11 +10,13 @@ prepend_keymap = [
 
 	# Chmod in yazi
 	{on   = [ "c", "m" ],run  = "plugin chmod",desc = "Chmod on selected files"},
-
 	{on   = [ "g", "E" ],run  = "plugin gpg",desc = "Gpg the hovered file"},
+	{on   = [ "q" ],run  = "plugin projects quit",desc = "Quit with save"},
+	{on   = [ "M" ],run  = "plugin mount",desc = "Quit with save"},
 
 	# Recover the last delted file
 	{ on = ["u"], run = "plugin restore", desc = "Restore last deleted files/folders" },
+	{ on = ["T"], run = "plugin toggle-pane max-preview", desc = "Restore last deleted files/folders" },
 
 	# Get the size of the cwd
 	{ on   = [ "\\", "s" ], run  = "plugin what-size", desc = "Calc size of selection or cwd" },
