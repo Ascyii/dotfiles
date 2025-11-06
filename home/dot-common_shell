@@ -93,3 +93,6 @@ alias tp="~/projects/scripts/shell/open_sess.sh"
 # From gpt
 alias nv='tmux new-session -d -s university -n uni "cd ~/projects/university && nvim -c '\''lua require(\"custom.uni\").select_course_directory()'\''" && tmux new-window -t university:2 -n typstar "cd ~/projects/typstar; exec $SHELL" && tmux select-window -t university:1 && tmux attach -t university'
 alias gre='grep -C 7 '
+
+alias f='nvim -c "lua vim.defer_fn(function() require(\"utils.functions\").fzf_wrapped(\"find\") end, 100)"'
+alias g='nvim -c "lua vim.defer_fn(function() require(\"utils.functions\").fzf_wrapped(\"grep\") end, 100)"'
