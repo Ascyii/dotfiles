@@ -81,7 +81,7 @@ alias aiiiii="bash ~/projects/scripts/sync_all.sh in"
 alias au="bash ~/projects/scripts/sync_all.sh out"
 
 alias ia="ip a"
-alias se="killall .nextcloud-wrap"
+alias sn="nohup 'nextcloud' > /dev/zero &"
 alias pdf="~/projects/scripts/shell/traverse_pdf.sh"
 alias ud="~/projects/scripts/shell/traverse_pdf.sh ~/projects/university ~/Nextcloud/University"
 alias rnt="~/projects/scripts/shell/traverse_rnote.sh ~/Nextcloud/University ~/Nextcloud/HandNotes"
@@ -96,3 +96,4 @@ alias gre='grep -C 7 '
 
 alias f='nvim -c "lua vim.defer_fn(function() require(\"utils.functions\").fzf_wrapped(\"find\") end, 100)"'
 alias g='nvim -c "lua vim.defer_fn(function() require(\"utils.functions\").fzf_wrapped(\"grep\") end, 100)"'
+alias kn="killall .nextcloud-wrapped"
