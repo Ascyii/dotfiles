@@ -77,3 +77,6 @@ fi
 
 # opencode
 export PATH=/home/jonas/.opencode/bin:$PATH
+
+# Added by GitLab Knowledge Graph installer
+export PATH="$HOME/.local/bin:$PATH"
