@@ -97,3 +97,7 @@ alias gre='grep -C 7 '
 alias f='nvim -c "lua vim.defer_fn(function() require(\"utils.functions\").fzf_wrapped(\"find\") end, 100)"'
 alias g='nvim -c "lua vim.defer_fn(function() require(\"utils.functions\").fzf_wrapped(\"grep\") end, 100)"'
 alias kn="killall .nextcloud-wrapped"
+alias nvi="nvim"
+alias vim="nvim"
+alias im="nvim"
+alias nim"nvim"
