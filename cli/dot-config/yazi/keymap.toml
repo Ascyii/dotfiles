@@ -48,7 +48,7 @@ append_keymap = [
 	{ on = [ "g", "a" ], run = "cd ~/.cache", desc = "Go to Cache" },
 	{ on = [ "g", "T" ], run = "cd ~/.local/share/Trash", desc = "Go to trash" },
 	{ on = [ "g", "t" ], run = "cd ~/Nextcloud/Notes", desc = "Go to notes" },
-	{ on = [ "g", "U" ], run = "cd ~/Nextcloud/University", desc = "Go to Uni" },
+	{ on = [ "g", "U" ], run = "cd ~/Nextcloud/University/current", desc = "Go to Uni" },
 	{ on = [ "g", "C" ], run = "cd ~/projects/university/S3", desc = "Go to current semester" },
 ]
 
