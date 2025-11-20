@@ -1,0 +1,66 @@
+(defcfg
+  input  (device-file "/dev/input/by-id/usb-HyperX_Alloy_Elite_RGB_HyperX_Alloy_Elite_RGB-event-kbd")
+
+  output (uinput-sink "Jonas kmonad modified output")
+  cmp-seq ralt
+  cmp-seq-delay 5
+  key-seq-delay 5
+
+  fallthrough true
+  allow-cmd true
+  implicit-around around
+)
+
+(defsrc
+  esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12        ssrq slck pause
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc  ins  home pgup  nlck kp/  kp*  kp-
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    ret   del  end  pgdn  kp7  kp8  kp9  kp+
+  caps a    s    d    f    g    h    j    k    l    ;    '    \                          kp4  kp5  kp6
+  lsft 102d z    x    c    v    b    n    m    ,    .    /    rsft            up         kp1  kp2  kp3  kprt
+  lctl lmet lalt           spc                 ralt rmet cmp  rctl       left down rght  kp0  kp.
+)
+
+(defalias
+  caps (tap-hold-next 300 esc lctl)
+
+  symbols (layer-toggle symbols)
+  specials (layer-toggle specials)
+  neo (layer-switch neo) ;; Also inspired from enthium and graphite
+  default (layer-switch default)
+)
+
+(deflayer default
+  @neo            f1    f2   f3   f4   f5   f6   f7   f8   f9       f10   f11   f12  XX   XX   XX
+  XX    1          2    3    4    5    6    7    8    9    0        XX    XX    bspc XX   XX   XX    XX XX XX XX
+  tab   q          w    e    r    t    y    u    i    o    p        XX    XX    ret  XX   XX   XX    XX XX XX XX
+  @caps a          s    d    f    g    h    j    k    l    @symbols XX    XX                         XX XX XX
+  lsft  @specials  z    x    c    v    b    n    m    ,    .        /     rsft            up         XX XX XX XX
+  XX    XX         lmet           spc                 ralt XX       XX    XX         left down rght  XX XX 
+)
+
+(deflayer neo
+  @default         f1   f2   f3   f4   f5   f6   f7   f8   f9          f10       f11   f12  XX   XX   XX
+  XX    1          2    3    4    5    6    7    8    9    0           XX        XX    bspc XX   XX   XX    XX XX XX XX
+  tab   b          l    d    w    z    _    f    o    u    j           XX        XX    ret  XX   XX   XX    XX XX XX XX
+  @caps n          r    t    s    g    y    h    a    e    l           @symbols  XX                         XX XX XX
+  lsft  @specials  q    x    m    c    v    k    p    _    _           _         rsft            up         XX XX XX XX
+  XX    XX         lmet           spc                 ralt XX          XX        XX         left down rght  XX XX 
+)
+
+(deflayer symbols
+  _    _    _    _    _    _    _    _    _    _    _    _    _          _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _     _    _    _    _    _    _    _
+  _    \    /    [    ]    ^    !    <    >    '    _    _    _    _     _    _    _    _    _    _    _
+  =    :    ;    {    }    *    ?    \(   \)   @    _    _    _                         _    _    _
+  "    -    #    $    |    ~    `    +    %    _    _    _    _               _         _    _    _    _
+  _    _    _              \_                  _    _    _    _          _    _    _    _    _
+)
+
+(deflayer specials
+  _    _    _    _    _    _    _    _    _    _    _    _    _          _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _     _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _     _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    ü    ö    ü    _    _    _                         _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _               _         _    _    _    _
+  _    _    _              _                   _    _    _    _          _    _    _    _    _
+)
