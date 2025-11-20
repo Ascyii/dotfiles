@@ -23,7 +23,6 @@
 (defalias
   caps (tap-hold-next 200 esc lctl)
 
-  symbols_neo (tap-hold-next 100 i (layer-toggle symbols))
   symbols_default (tap-hold 100 ; (layer-toggle symbols))
 
   neo (layer-switch neo)
@@ -45,7 +44,7 @@
   @default         f1   f2   f3   f4   f5   f6   f7   f8   f9            f10       f11   f12  XX   XX   XX
   XX    1          2    3    4    5    6    7    8    9    0             XX        XX    bspc XX   XX   XX    XX XX XX XX
   tab   b          l    d    w    z    _    f    o    u    j             XX        XX    ret     XX   XX   XX    XX XX XX XX
-  @caps n          r    t    s    g    y    h    a    e    @symbols_neo  XX        XX                         XX XX XX
+  @caps n          r    t    s    g    y    h    a    e    i  XX        XX                         XX XX XX
   lsft  @specials  q    x    m    c    v    k    p    _    _             _         rsft            up         XX XX XX XX
   XX    XX         lmet           spc                 ralt XX            XX        XX         left down rght  XX XX 
 )
