@@ -23,9 +23,10 @@
   caps (tap-hold-next 200 esc lctl)
 
   symbols (layer-toggle symbols)
+  specials (layer-toggle specials)
+  numbers (layer-toggle numbers)
 
   neo (layer-switch neo)
-  specials (layer-toggle specials)
   default (layer-switch default)
 )
 
@@ -34,7 +35,7 @@
   tab   q    w    e    r    t    y    u    i    o    p    [    ]    ret
   @caps  a    s    d    f    g    h    j    k    l    ;    @symbols   @symbols 
   lsft @specials  z    x    c    v    b    n    m    ,    .    /    rsft
-  @neo XX lmet            spc                 ralt XX XX  XX
+  @neo @numbers lmet            spc                 ralt XX XX  XX
 )
 
 (deflayer neo
@@ -42,7 +43,7 @@
   tab   b    l    d    w    z    _    f    o    u    j    [    ]    ret
   @caps  n    r    t    s    g    y    h    a    e    i    @symbols   @symbols 
   lsft lsgt  q    x    m    c    v    k    p    ,    .    /    rsft
-  @default XX lmet            spc                 ralt XX XX  XX
+  @default @numbers lmet            spc                 ralt XX XX  XX
 )
 
 (deflayer symbols
@@ -59,5 +60,13 @@
   _     _    _    _    _    _    _    _    _    _    _    _    _    _
   _     _    _    _    _    _    _    _    _    _    _    _    _
   _     _    _    _    _    _    _    _    _    _    _    _    _
+  _     _    _              _              _    _    _    _
+)
+
+(deflayer numbers
+  _     _    _    _    _    _    _    _    _    _    _    _    _    _
+  _     _    _    _    _    _    _    7    8    9    0    _    _    _
+  _     _    _    _    _    _    _    4    5    6    _    _    _
+  _     _    _    _    _    _    _    1    2    3    _    _    _
   _     _    _              _              _    _    _    _
 )
