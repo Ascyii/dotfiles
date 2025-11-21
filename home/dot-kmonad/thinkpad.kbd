@@ -1,0 +1,62 @@
+(defcfg
+  input  (device-file "/dev/input/by-id/<keyboard>")
+
+  output (uinput-sink "Jonas kmonad modified output")
+  cmp-seq ralt
+  cmp-seq-delay 5
+  key-seq-delay 5
+
+  fallthrough true
+  allow-cmd true
+  implicit-around around
+)
+
+(defsrc
+  grv   1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab   q    w    e    r    t    y    u    i    o    p    [    ]    ret
+  caps  a    s    d    f    g    h    j    k    l    ;    '    \
+  lsft lsgt  z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lmet lalt            spc                 ralt rmet cmp  rctl
+)
+
+(defalias
+  caps (tap-hold-next 200 esc lctl)
+
+  symbols (layer-toggle symbols)
+
+  neo (layer-switch neo)
+  specials (layer-toggle specials)
+  default (layer-switch default)
+)
+
+(deflayer default
+  grv   1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab   q    w    e    r    t    y    u    i    o    p    [    ]    ret
+  @caps  a    s    d    f    g    h    j    k    l    ;    @symbols   @symbols 
+  lsft @specials  z    x    c    v    b    n    m    ,    .    /    rsft
+  @neo XX lmet            spc                 ralt XX XX  XX
+)
+
+(deflayer neo
+  grv   1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab   q    w    e    r    t    y    u    i    o    p    [    ]    ret
+  caps  a    s    d    f    g    h    j    k    l    ;    '    \
+  lsft lsgt  z    x    c    v    b    n    m    ,    .    /    rsft
+  @default lmet lalt            spc                 ralt rmet cmp  rctl
+)
+
+(deflayer symbols
+  _     _    _    _    _    _    _    _    _    _    _    _    _    _
+  _     _    _    _    _    _    _    _    _    _    _    _    _    _
+  _     _    _    _    _    _    _    _    _    _    _    _    _
+  _     _    _    _    _    _    _    _    _    _    _    _    _
+  _     _    _              _              _    _    _    _
+)
+
+(deflayer specials
+  _     _    _    _    _    _    _    _    _    _    _    _    _    _
+  _     _    _    _    _    _    _    _    _    _    _    _    _    _
+  _     _    _    _    _    _    _    _    _    _    _    _    _
+  _     _    _    _    _    _    _    _    _    _    _    _    _
+  _     _    _              _              _    _    _    _
+)

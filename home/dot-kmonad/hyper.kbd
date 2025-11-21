@@ -23,7 +23,7 @@
 (defalias
   caps (tap-hold-next 200 esc lctl)
 
-  symbols_default (tap-hold 100 ; (layer-toggle symbols))
+  symbols (layer-toggle symbols)
 
   neo (layer-switch neo)
   specials (layer-toggle specials)
@@ -31,30 +31,30 @@
 )
 
 (deflayer default
-  @neo            f1    f2   f3   f4   f5   f6   f7   f8   f9               f10         f11   f12  XX   XX   XX
-  XX    1          2    3    4    5    6    7    8    9    0                XX          XX    bspc XX   XX   XX    XX XX XX XX
-  tab   q          w    e    r    t    y    u    i    o    p                XX          XX    ret  XX   XX   XX    XX XX XX XX
-  @caps a          s    d    f    g    h    j    k    l    @symbols_default XX          XX                         XX XX XX
+  esc            f1    f2   f3   f4   f5   f6   f7   f8   f9               f10         f11   f12  XX   XX   XX
+  grv    1          2    3    4    5    6    7    8    9    0                -          =    bspc XX   XX   XX    XX XX XX XX
+  tab   q          w    e    r    t    y    u    i    o    p                [          ]    ret  XX   XX   XX    XX XX XX XX
+  @caps a          s    d    f    g    h    j    k    l    ; @symbols          @symbols                         XX XX XX
   rsft  @specials  z    x    c    v    b    n    m    ,    .                /           rsft            up         XX XX XX XX
-  XX    XX         lmet           spc                 ralt XX               XX          XX         left down rght  XX XX 
+  @neo    XX         lmet           spc                 ralt XX               XX          XX         left down rght  XX XX 
 )
 
 ;; Inspired from neo, graphite and enthium
 (deflayer neo
-  @default         f1   f2   f3   f4   f5   f6   f7   f8   f9            f10       f11   f12  XX   XX   XX
+  esc         f1   f2   f3   f4   f5   f6   f7   f8   f9            f10       f11   f12  XX   XX   XX
   XX    1          2    3    4    5    6    7    8    9    0             XX        XX    bspc XX   XX   XX    XX XX XX XX
   tab   b          l    d    w    z    _    f    o    u    j             XX        XX    ret     XX   XX   XX    XX XX XX XX
-  @caps n          r    t    s    g    y    h    a    e    i  XX        XX                         XX XX XX
+  @caps n          r    t    s    g    y    h    a    e    i  @symbols        @symbols                         XX XX XX
   lsft  @specials  q    x    m    c    v    k    p    _    _             _         rsft            up         XX XX XX XX
-  XX    XX         lmet           spc                 ralt XX            XX        XX         left down rght  XX XX 
+  @default    XX         lmet           spc                 ralt XX            XX        XX         left down rght  XX XX 
 )
 
 (deflayer symbols
   _    _    _    _    _    _    _    _    _    _    _    _    _          _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _     _    _    _    _    _    _    _
-  _    \    /    [    ]    ^    !    <    >    '    _    _    _    _     _    _    _    _    _    _    _
-  =    :    ;    {    }    *    ?    \(   \)   @    _    _    _                         _    _    _
-  "    -    #    $    |    ~    `    +    %    _    _    _    _               _         _    _    _    _
+  -    \    /    [    ]    ^    !    <    >    @    _    _    _    _     _    _    _    _    _    _    _
+  =    '    "    {    }    *    _    \(   \)   _   _    _    _                         _    _    _
+  ?    _    #    $    |    ~    `    +    %    _    _    _    _               _         _    _    _    _
   _    _    &              \_                  _    _    _    _          _    _    _    _    _
 )
 
