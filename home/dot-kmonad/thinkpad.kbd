@@ -39,19 +39,20 @@
 
 (deflayer neo
   grv   1    2    3    4    5    6    7    8    9    0    -    =    bspc
-  tab   q    w    e    r    t    y    u    i    o    p    [    ]    ret
-  caps  a    a    d    f    g    h    j    k    l    ;    '    \
-  lsft lsgt  z    x    c    v    b    n    m    ,    .    /    rsft
-  @default lmet lalt            spc                 ralt rmet cmp  rctl
+  tab   b    l    d    w    z    _    f    o    u    j    [    ]    ret
+  @caps  n    r    t    s    g    y    h    a    e    i    @symbols   @symbols 
+  lsft lsgt  q    x    m    c    v    k    p    ,    .    /    rsft
+  @default XX lmet            spc                 ralt XX XX  XX
 )
 
 (deflayer symbols
   _     _    _    _    _    _    _    _    _    _    _    _    _    _
   _     _    _    _    _    _    _    _    _    _    _    _    _    _
-  _     _    _    _    _    _    _    _    _    _    _    _    _
+  =    '    "    {    }    *    ?    \(   \)     _    _    _    _
   _     _    _    _    _    _    _    _    _    _    _    _    _
   _     _    _              _              _    _    _    _
 )
+
 
 (deflayer specials
   _     _    _    _    _    _    _    _    _    _    _    _    _    _
