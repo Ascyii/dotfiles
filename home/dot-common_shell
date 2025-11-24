@@ -98,3 +98,4 @@ alias f='nvim -c "lua vim.defer_fn(function() require(\"utils.functions\").fzf_w
 alias g='nvim -c "lua vim.defer_fn(function() require(\"utils.functions\").fzf_wrapped(\"grep\") end, 100)"'
 alias kn="killall .nextcloud-wrapped"
 alias vim="nvim"
+alias kh="kmonad ~/dotfiles/home/dot-kmonad/hyper.kbd"
