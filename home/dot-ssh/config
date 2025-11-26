@@ -28,6 +28,11 @@ Host physik
 	User j.hahn02
 	IdentityFile ~/.ssh/id_university
 
+Host theo_bitzz
+	HostName bitzz.de
+	User theo
+	IdentityFile ~/.ssh/id_theo
+
 Host informatik
 	HostName shell.informatik.uni-goettingen.de
 	User j.hahn02
