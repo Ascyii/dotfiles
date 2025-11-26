@@ -11,6 +11,7 @@ export MANPAGER="nvim +Man!"
 export GOPATH=$HOME/.go
 export PATH=$HOME/.go/bin:$PATH
 export ANDROID_HOME=/home/jonas/Android
+export NAP_CONFIG="~/.config/nap/config.yaml"
 
 export loc="$HOME/files_local/"
 
