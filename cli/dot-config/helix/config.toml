@@ -1,5 +1,5 @@
 # Test
-theme = "gruvbox_dark_hard"
+theme = "jonas"
 
 [keys.normal]
 # Quick iteration on config changes
