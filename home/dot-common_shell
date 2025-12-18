@@ -2,7 +2,7 @@
 # Common config across different shells #
 #########################################
 
-export EDITOR='nvim'
+export EDITOR='hx'
 export HTTP_HOME="duckduckgo.com"
 export RANGER_LOAD_DEFAULT_RC=false
 export PATH=$HOME/programs_local/:$HOME/.cargo/bin:~/projects/scripts:$HOME/.local/bin:/usr/local/bin:$PATH
@@ -31,6 +31,7 @@ alias a="alpine"
 alias ff="~/projects/scripts/hyprfix.sh" # Fix the touchpad not working on the laptop with a simple script
 alias sp="spotify_player"
 alias ne="newsboat"
+alias j="zellij -l compact options --simplified-ui true"
 alias po="castero"
 alias h="~/projects/scripts/shell/helper.sh"
 alias tw="torify w3m duckduckgo.com"
