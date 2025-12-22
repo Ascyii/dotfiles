@@ -22,6 +22,9 @@
 	email = "jonashahn1@gmx.net"
 	name = "Jonas Hahn"
 
+[diff]
+    tool = "vimdiff"
+
 [core]
 	autocrlf = input
 

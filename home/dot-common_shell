@@ -5,8 +5,8 @@
 export EDITOR='hx'
 export HTTP_HOME="duckduckgo.com"
 export RANGER_LOAD_DEFAULT_RC=false
-export PATH=$HOME/programs_local/:$HOME/.cargo/bin:~/projects/scripts:$HOME/.local/bin:/usr/local/bin:$PATH
-export PATH=$HOME/programs_local/:~/projects/scripts:$PATH
+export PATH=$HOME/programs_local/:$HOME/.cargo/bin:~/projects/scripts:/usr/local/bin:$PATH
+export PATH=$HOME/programs_local/:~/projects/scripts:~/projects/scripts/other:$PATH
 export MANPAGER="nvim +Man!"
 export GOPATH=$HOME/.go
 export PATH=$HOME/.go/bin:$PATH
@@ -14,6 +14,18 @@ export ANDROID_HOME=/home/jonas/Android
 export NAP_CONFIG="~/.config/nap/config.yaml"
 
 export loc="$HOME/files_local/"
+
+# Currently not working
+alias gita="GIT_PAGER=cat git cat-file --batch-all-objects --batch-check \
+| awk '$2==\"blob\"{print $1}' \
+| xargs -n1 -I{} sh -c '
+  echo; echo \"==================== {} ====================\";
+  git cat-file -p {} > /tmp/blob.bin;
+  case "$(file -b /tmp/blob.bin)" in
+    *text*) sed -n \"1,200p\" /tmp/blob.bin ;;
+    *) strings /tmp/blob.bin | sed -n \"1,200p\" ;;
+  esac
+'"
 
 alias oati="~/projects/scripts/oathi.sh"
 alias imu="immich upload -r ."
@@ -28,6 +40,7 @@ alias mm="systemctl start mnt-webdav.mount"
 alias wi="wiki-tui"
 alias a="alpine"
 alias h="hx"
+alias l="lazygit"
 alias ff="~/projects/scripts/hyprfix.sh" # Fix the touchpad not working on the laptop with a simple script
 alias sp="spotify_player"
 alias ne="newsboat"
@@ -43,7 +56,7 @@ alias lg="lazygit"
 alias m="make"
 alias mn="make nix"
 alias syn="~/projects/scripts/run_unison.sh"
-alias s="sync"
+alias s="sync && source ~/.zshrc"
 alias rmt="rm /tmp/all_git_projects"
 alias fu="chch && fla && shd"
 alias fla="sudo nixos-rebuild switch --flake ~/nixos#"

@@ -122,7 +122,7 @@
 
 
 [palette]
-bg0 = "#282828"   # main background
+bg0 = "#000000"   # main background
 bg0_s = "#32302f"
 bg1 = "#3c3836"
 bg2 = "#504945"

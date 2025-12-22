@@ -5,6 +5,9 @@ export TERM="alacritty"
 bindkey '^R' history-incremental-search-backward
 bindkey -v
 
+alias cat="bat"
+alias ls="exa"
+
 function rgnvim() {
   rg --vimgrep "$@" \
     | fzf --delimiter : --nth 1,2,3,4 \
@@ -79,4 +82,5 @@ fi
 export PATH=/home/jonas/.opencode/bin:$PATH
 
 # Added by GitLab Knowledge Graph installer
+# Wird auch von uv genutzt
 export PATH="$HOME/.local/bin:$PATH"
