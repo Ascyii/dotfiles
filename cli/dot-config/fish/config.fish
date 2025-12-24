@@ -5,4 +5,6 @@ if status is-interactive
     alias l="lazygit"
 
     theme_gruvbox dark hard
+
+    zoxide init fish | source
 end

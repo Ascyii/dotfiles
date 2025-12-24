@@ -14,5 +14,7 @@ function r() {
 	rm -f -- "$tmp"
 }
 
+eval "$(zoxide init bash)"
+
 # Added by GitLab Knowledge Graph installer
 export PATH="$HOME/.local/bin:$PATH"
