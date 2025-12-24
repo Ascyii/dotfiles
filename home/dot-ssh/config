@@ -8,6 +8,11 @@ Host amazon
 	User ec2-user
 	IdentityFile ~/.ssh/id_amazon
 
+Host harch
+	Hostname 192.168.178.20
+	User jonas
+	IdentityFile ~/.ssh/id_amazon
+
 
 Host gitlab.gwdg.de
 	HostName gitlab.gwdg.de
