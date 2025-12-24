@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-stow -v --dotfiles $1
+stow --adopt -v --dotfiles $1
