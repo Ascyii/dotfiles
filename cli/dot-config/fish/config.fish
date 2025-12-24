@@ -3,4 +3,6 @@ if status is-interactive
     alias helix="hx"
     alias shd="shutdown now"
     alias l="lazygit"
+
+    theme_gruvbox dark hard
 end
