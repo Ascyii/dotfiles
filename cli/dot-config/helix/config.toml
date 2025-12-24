@@ -1,2 +1,8 @@
 # Test
 theme = "jonas"
+
+[editor.file-picker]
+hidden = false
+
+[keys.normal.space]
+"H" = ":reset-diff-change" # Hard reset the hunk
