@@ -6,6 +6,13 @@ else
 	PS1='\u@\h:\w\$ '
 fi
 
+function r() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}
 
 # Added by GitLab Knowledge Graph installer
 export PATH="$HOME/.local/bin:$PATH"
