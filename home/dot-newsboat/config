@@ -1,13 +1,28 @@
 # Rss reader newsboat
-
 max-items 100
 browser w3m
 show-read-feeds no
 
-# Setting the theme
-color info color255 color100
-color listfocus color255 color11
-color listfocus_unread color255 color11
+# Newsboat colour scheme to work with the Gruvbox palette
+# Inspired by the vim theme https://github.com/morhetz/gruvbox
+# Tested with the Kitty gruvbox terminal colour scheme
+# https://github.com/wdomitrz/kitty-gruvbox-theme
+
+color background          color223   color0
+color listnormal          color223   color0
+color listnormal_unread   color2     color0
+color listfocus           color223   color237
+color listfocus_unread    color223   color237
+color info                color75     color0
+color article             color223   color0
+
+# highlights
+highlight article "^(Feed|Link):.*$" color11 default bold
+highlight article "^(Title|Date|Author):.*$" color11 default bold
+highlight article "https?://[^ ]+" color2 default underline
+highlight article "\\[[0-9]+\\]" color2 default bold
+highlight article "\\[image\\ [0-9]+\\]" color2 default bold
+highlight feedlist "^─.*$" color6 color6 bold
 
 # The prefix key is , so you have to press comma before any macros
 # Remember to change the browser here when changing the default browser

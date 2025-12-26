@@ -34,6 +34,7 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+
 [advice]
 	mergeConflict = false
 
@@ -42,7 +43,8 @@
 	smtpuser = jonashahn1@gmx.net
 	smtpencryption = ssl
 	smtpserverport = 465
-	confirm = "always"
+	confirm = "never"
+	suppressCc = "all"
 
 [credential]
 	helper = store

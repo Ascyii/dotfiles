@@ -13,6 +13,10 @@ Host harch
 	User jonas
 	IdentityFile ~/.ssh/id_amazon
 
+Host git.sr.ht
+	Hostname git.sr.ht
+	User git
+	IdentityFile ~/.ssh/id_srht
 
 Host gitlab.gwdg.de
 	HostName gitlab.gwdg.de
