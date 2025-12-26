@@ -2,6 +2,7 @@ source $HOME/.common_shell
 
 if [ -f /etc/NIXOS ]; then
   eval "$(starship init bash)"
+  eval "$(zoxide init bash)"
 else
 	PS1='\u@\h:\w\$ '
 fi
@@ -13,8 +14,6 @@ function r() {
 	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
 	rm -f -- "$tmp"
 }
-
-eval "$(zoxide init bash)"
 
 # Added by GitLab Knowledge Graph installer
 export PATH="$HOME/.local/bin:$PATH"

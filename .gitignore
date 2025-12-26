@@ -1,6 +1,8 @@
 # Ignore the yazi packages and only store the commit in the dotfiles
-/cli/dot-config/yazi/flavors
-/cli/dot-config/yazi/plugins
+cli/dot-config/yazi/flavors
+cli/dot-config/yazi/plugins
+cli/dot-config/weechat/sec.conf
 
 # No database
 home/dot-newsboat/cache.db
+home/dot-newsboat/cache.db.lock

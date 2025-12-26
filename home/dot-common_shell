@@ -7,6 +7,7 @@ export HTTP_HOME="duckduckgo.com"
 export RANGER_LOAD_DEFAULT_RC=false
 export PATH=$HOME/programs_local/:$HOME/.cargo/bin:~/projects/scripts:/usr/local/bin:$PATH
 export PATH=$HOME/programs_local/:~/projects/scripts:~/projects/scripts/other:$PATH
+export TERM="xterm"
 export MANPAGER="nvim +Man!"
 export GOPATH=$HOME/.go
 export PATH=$HOME/.go/bin:$PATH
