@@ -4,6 +4,7 @@
 	lg = "log --oneline --graph --decorate"
 	st = "status"
 	up = "!f() { git add .; git commit -a -m 'auto commit'; git fetch -a && git pull && git push; }; f"
+	up = "!f() { git add .; git commit -a -m 'auto commit'; git fetch -a && git pull && git push; }; f"
 
 [branch]
 	autoSetupMerge = true
@@ -33,3 +34,15 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[advice]
+	mergeConflict = false
+
+[sendemail]
+	smtpserver = mail.gmx.net
+	smtpuser = jonashahn1@gmx.net
+	smtpencryption = ssl
+	smtpserverport = 465
+	confirm = "always"
+
+[credential]
+	helper = store

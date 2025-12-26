@@ -9,4 +9,4 @@ bash stow.sh gui
 bash stow.sh home
 
 # Reset to the last autosave
-git reset --hard HEAD
+#git reset --hard HEAD
